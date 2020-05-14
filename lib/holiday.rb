@@ -80,9 +80,9 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |seasons, holidays|
     holidays.each do |holiday, supply|
       if supply == "BBQ"
-        holiday_names << holiday.join
+        holiday_names << holiday
       end
     end
+    holiday_names
   end
-  holiday_names
 end
